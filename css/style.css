@@ -38,13 +38,15 @@ body {
 .paragraph {
     font-size: 1.6rem;
 }
+
+/* MAIN Container*/
 .container {
+    display: flex;
     background-color: var(--White);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    display: none;
     border-radius: 2rem;
     padding: 2rem;
     height: 52rem;
@@ -121,16 +123,17 @@ body {
 /*  Success Container */
 
 .container-success {
+    display: none;
     background-color: var(--White);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    display: flex;
     flex-direction: column;
     padding: 6rem;
     color: var(--Dark-Slate-Grey);
     border-radius: 3rem;
+    width: 48rem;
 }
 
 .container-success > :not(:last-child) {
@@ -138,4 +141,39 @@ body {
 }
 .icon-box {
     width: 7rem;
+}
+
+/* Media Query for MAIN Container*/
+@media (max-width:900px){
+    .container {
+        padding: 0;
+        border-radius: 0;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+    .newsletter__img-box {
+        background-image: url("../assets/images/illustration-sign-up-mobile.svg");
+        background-repeat: no-repeat;
+        width: 100%;
+        order: -1;
+        height: 40vh;
+    }
+
+}
+
+
+/* Media Query for SUCCESS part*/
+@media (max-width:600px){
+    .container-success {
+        width: 100vw;
+        height: 100vh;
+        padding: 13rem 3rem 4rem;
+        border-radius: 0;
+    }
+    .container-success p {
+        flex: 1;
+    }
 }
