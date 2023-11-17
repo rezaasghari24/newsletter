@@ -18,6 +18,7 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%; 
+    width: 100%;
 }
 
 body {
@@ -25,4 +26,94 @@ body {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.7;
+    background-color: var(--Charcoal-Grey);
+}
+
+.primary-header {
+    font-size: 5.5rem;
+    font-weight: 700;
+}
+
+.paragraph {
+    font-size: 1.6rem;
+}
+.container {
+    
+    background-color: var(--White);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    border-radius: 2rem;
+    padding: 2rem;
+    height: 57rem;
+}
+
+.newsletter {
+    padding: 3rem;
+    max-width: 46rem;
+    min-width: 42rem;
+    height: auto;
+}
+.newsletter > * {
+    margin-bottom: 1.5rem;
+}
+.newsletter__img-box {
+    background-image: url("../assets/images/illustration-sign-up-desktop.svg");
+    background-position: center;
+    border-radius: 2rem;
+    min-width: 36rem;
+    
+}
+
+.newsletter__list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.newsletter__list--icn {
+    margin-right: 1rem;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+}
+.email-lable {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.email-input {
+    outline: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    padding: 1.5rem 1.2rem;
+    color: var(--Charcoal-Grey);
+    border: .1rem solid var(--Grey);
+    margin-bottom: 2rem;
+}
+
+.email-input:focus-visible {
+    border: .1rem solid var(--Grey);
+}
+
+
+.btn:link,
+.btn:visited {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: var(--Dark-Slate-Grey);
+    color: var(--White);
+    padding: 1.5rem 0;
+    border-radius: 1rem;
+    transition: all .5s;
+}
+
+.btn:hover {
+    background-image: linear-gradient(to right bottom, rgb(254, 84, 120),rgb(253, 104, 62));
+    box-shadow: 0rem 2rem 71px -13px rgb(254, 84, 120);
 }
