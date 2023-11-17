@@ -32,22 +32,22 @@ body {
 .primary-header {
     font-size: 5.5rem;
     font-weight: 700;
+    line-height: 1;
 }
 
 .paragraph {
     font-size: 1.6rem;
 }
 .container {
-    
     background-color: var(--White);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    display: flex;
+    display: none;
     border-radius: 2rem;
     padding: 2rem;
-    height: 57rem;
+    height: 52rem;
 }
 
 .newsletter {
@@ -116,4 +116,26 @@ body {
 .btn:hover {
     background-image: linear-gradient(to right bottom, rgb(254, 84, 120),rgb(253, 104, 62));
     box-shadow: 0rem 2rem 71px -13px rgb(254, 84, 120);
+}
+
+/*  Success Container */
+
+.container-success {
+    background-color: var(--White);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    padding: 6rem;
+    color: var(--Dark-Slate-Grey);
+    border-radius: 3rem;
+}
+
+.container-success > :not(:last-child) {
+    margin-bottom: 3rem;
+}
+.icon-box {
+    width: 7rem;
 }
