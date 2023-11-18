@@ -42,9 +42,12 @@
         </div>
       </section>
       <div class="subscribe">
-        <label class="email-lable" for="email">Email Address</label>
+        <div class="labale-box">
+          <label class="email-lable" for="email">Email Address</label>
+          <label class="email-lable email-not-valid hidden" for="email">valid email required</label>
+        </div>
         <input class="email-input" type="email" id="email" name="email" placeholder="email@company.com">
-        <a class="btn" href="#">Subscribe to monthly newsletter</a>
+        <a class="btn btn-sub" href="#">Subscribe to monthly newsletter</a>
       </div>
     </div>
     <div class="newsletter__img-box">
@@ -56,22 +59,16 @@
 
   <!-- Success message start -->
 
-  <div class="container-success">
+  <div class="container-success hidden">
     <img class="icon-box" src="assets/images/icon-success.svg"></img>
     <div class="primary-header">
       Thanks for subscribing!
     </div>
-    <p class="paragraph">A confirmation email has been sent to ash@loremcompany.com. 
+    <p class="paragraph">A confirmation email has been sent to <span id="display-email"></span>. 
       Please open it and click the button inside to confirm your subscription.</p>
-    <a href="#" class="btn">Dismiss messag</a>
+    <a href="#" class="btn btn-success">Dismiss message</a>
   </div>
-  
-  <!-- 
-
-  
-
-  e -->
-
+ 
   <!-- Success message end -->
   
   <!-- <div class="attribution">

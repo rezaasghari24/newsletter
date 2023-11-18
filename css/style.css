@@ -7,6 +7,7 @@
     --White: hsl(0, 0%, 100%);
 }
 
+
 *,
 *::before,
 *::after {
@@ -83,9 +84,20 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+.labale-box {
+    display: flex;
+    justify-content: space-between;
+}
 .email-lable {
     font-size: 1rem;
     font-weight: 700;
+}
+
+.email-not-valid {
+    color: var(--color-primary);
+    align-self: flex-end;
+
 }
 
 .email-input {
@@ -102,6 +114,15 @@ body {
     border: .1rem solid var(--Grey);
 }
 
+.email-input-not-valid {
+    color: red;
+    border: .1rem solid red;
+    background-color: #fde6e4;
+}
+
+#display-email {
+    font-weight: 700;
+}
 
 .btn:link,
 .btn:visited {
@@ -112,18 +133,21 @@ body {
     color: var(--White);
     padding: 1.5rem 0;
     border-radius: 1rem;
-    transition: all .5s;
+    transition: all .2s;
 }
 
 .btn:hover {
     background-image: linear-gradient(to right bottom, rgb(254, 84, 120),rgb(253, 104, 62));
     box-shadow: 0rem 2rem 71px -13px rgb(254, 84, 120);
+    transform: translateY(-.2rem);
+}
+.btn:active {
+    transform: translateY(0);
 }
 
 /*  Success Container */
 
 .container-success {
-    display: none;
     background-color: var(--White);
     position: absolute;
     top: 50%;
@@ -143,6 +167,9 @@ body {
     width: 7rem;
 }
 
+.hidden {
+    display: none;
+}
 /* Media Query for MAIN Container*/
 @media (max-width:900px){
     .container {
