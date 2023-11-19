@@ -124,16 +124,21 @@ body {
     font-weight: 700;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
     text-decoration: none;
+    border: none;
     text-align: center;
-    display: block;
+    font-weight: 700;
+    width: 100%;
     background-color: var(--Dark-Slate-Grey);
     color: var(--White);
     padding: 1.5rem 0;
     border-radius: 1rem;
     transition: all .2s;
+    cursor: pointer;
+    
 }
 
 .btn:hover {
